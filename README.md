@@ -1,20 +1,20 @@
-# CAR_PROJECT_DATAKODE
-Exercise realised for the company DATAKODE in the perspective of an internship
-(1d)
+# CAR_PROJECT_DATAKODE</br>
+Exercise realised for the company DATAKODE in the perspective of an internship</br>
+(1d)</br></br>
 
-Missing parts:
-  archive recover.
-  car saling and car releasing.
-  connection system with roles.
-  anti SQL injections security.
+Missing parts:</br>
+  archive recover.</br>
+  car saling and car releasing.</br>
+  connection system with roles.</br>
+  anti SQL injections security.</br></br>
 
-#HOW TO INSTALL AND DEPLOY
-First download all project and put it in your web root  folder.
-Then import the database "car_project.sql" to your DBMS.
+#HOW TO INSTALL AND DEPLOY</br>
+First download all project and put it in your web root  folder.</br>
+Then import the database "car_project.sql" to your DBMS.</br>
 
-#HOW TO USE IT
-Add pages -> put the asked values in asked fields
-List pages -> edit to edit the values, archive to archive the values
-Archive pages -> delete to delete the values
-Edit pages -> put the asked values in asked fields
+#HOW TO USE IT</br>
+Add pages -> put the asked values in asked fields</br>
+List pages -> edit to edit the values, archive to archive the values</br>
+Archive pages -> delete to delete the values</br>
+Edit pages -> put the asked values in asked fields</br>
   
