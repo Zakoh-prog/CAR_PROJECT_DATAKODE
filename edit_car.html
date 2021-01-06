@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Create employee </title>
+        <meta charset="utf-8">
+
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        
+    </head>
+    <body>
+        <div id="nav-placeholder"></div>
+        <div style="margin: auto;width: 40%;">
+            <div class="alert alert-success alert-dismissible" id="success" style="display:none;">
+                <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+            </div>
+            <form id="fupForm" method="post" name="form1">
+                <div class="form-group">
+                    <label for="brand">Brand :</label>
+                    <input type="text" class="form-control" placeholder="Car brand" id="brand"/>
+                </div>
+
+                <div class="form-group">
+                    <label for="model">Model :</label>
+                    <input type="text" class="form-control" placeholder="Car model" id="model"/>
+                </div>
+
+                <div class="form-group">
+                    <label for="buyingprice">Buying price :</label>
+                    <input type="text" class="form-control" placeholder="Car buying price" id="buyingprice"/>
+                </div>
+
+                <div class="form-group" style="width:20%;">
+                    <label for="buyingdate">Buying date :</label>
+                    <input type="date" class="form-control" id="buyingdate"/>
+                </div>
+
+                <div class="form-group">
+                    <label for="resaleprice">Resale price :</label>
+                    <input type="text" class="form-control" placeholder="Car resale price" id="resaleprice"/>
+                </div>
+
+                <div class="form-group">
+                    <label for="resaledate">Resale date :</label>
+                    <input type="date" class="form-control" id="resaledate"/>
+                </div>
+
+                <div class="form-group">
+                    <label for="releasedate">Release date :</label>
+                    <input type="date" class="form-control" id="releasedate"/>
+                </div>
+
+                <div class="form-group">
+                    <label for="carimg">Car pic</label>
+                    <input type="file" id="carimg" onchange="loadFile(event)"/>
+                    <img id="output"/>
+                    <script>
+                        var loadFile = function(event) {
+                            var output = document.getElementById('output');
+                            output.src = URL.createObjectURL(event.target.files[0]);
+                            output.onload = function() {
+                            URL.revokeObjectURL(output.src) 
+                            }
+                        };
+                    </script>
+                </div>
+
+
+                <input type="button" class="btn btn-primary" id="butsave" value="Edit Car"/>
+            </form>
+        </div>
+        <script>
+            $(function(){
+              $("#nav-placeholder").load("nav.html");
+            });
+        </script>
+        <script type="text/javascript" src="js/edit_car.js"></script>
+    </body>
+</html>

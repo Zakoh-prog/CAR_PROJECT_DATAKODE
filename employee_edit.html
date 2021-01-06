@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Create employee </title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    </head>
+    <body>
+        <div id="nav-placeholder"></div> 
+        <div style="margin: auto;width: 60%;">
+            <div class="alert alert-success alert-dismissible" id="success" style="display:none;">
+                <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+            </div>
+            <form id="fupForm" method="post" name="form1">
+                <div class="form-group">
+                    <label for="lastname">Lastname :</label>
+                    <input type="text" class="form-control" placeholder="Employee lastname" id="lastname"/>
+                </div>
+
+                <div class="form-group">
+                    <label for="firstname">Firstname :</label>
+                    <input type="text" class="form-control" placeholder="Employee firstname" id="firstname"/>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email :</label>
+                    <input type="email" class="form-control" placeholder="Employee email" id="email"/>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password :</label>
+                    <input type="password" class="form-control" placeholder="Employee password" id="password"/>
+                </div>
+
+                <div class="form-group">
+                    <label for="confpassword">Confirm password :</label>
+                    <input type="password" class="form-control" placeholder="Confirm employee password" id="confpassword"/>
+                </div>
+
+
+                <input type="button" class="btn btn-primary" id="butsave" value="Add Employee"/>
+            </form>
+        </div>
+        <script>
+            $(function(){
+              $("#nav-placeholder").load("nav.html");
+            });
+        </script>
+        <script type="text/javascript" src="js/edit_employee.js"></script>
+    </body>
+</html>
